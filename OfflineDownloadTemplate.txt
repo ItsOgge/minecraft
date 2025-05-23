@@ -8,7 +8,7 @@ This file is from ${date}, there is no official eagler download link anymore, ch
 
 Be aware that some server owners are lazy and do not update their client regularly
 
-Compile it yourself here: https://gitlab.com/lax1dude/eaglercraftx-1.8/
+This is the WASM-GC version of EaglercraftX and may not be compatible with outdated browsers
 
 -->
 
@@ -28,12 +28,12 @@ Compile it yourself here: https://gitlab.com/lax1dude/eaglercraftx-1.8/
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
-<meta name="description" content="EaglercraftX 1.8 Offline" />
+<meta name="description" content="EaglercraftX 1.8 WASM-GC Offline" />
 <meta name="keywords" content="eaglercraft, eaglercraftx, minecraft, 1.8, 1.8.8" />
-<title>EaglercraftX 1.8</title>
+<title>EaglercraftX 1.8 WASM-GC</title>
 <meta property="og:locale" content="en-US" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="EaglercraftX 1.8 Offline" />
+<meta property="og:title" content="EaglercraftX 1.8 WASM-GC Offline" />
 <meta property="og:description" content="this file is not a website, whoever uploaded it to this URL is a dumbass" />
 <script type="text/javascript">
 "use strict";
@@ -86,10 +86,6 @@ ${classes_js}
 		document.getElementById("skipCountdown").addEventListener("click", function() {
 			launchSkipCountdown = true;
 		});
-		document.getElementById("bootMenu").addEventListener("click", function() {
-			launchSkipCountdown = true;
-			window.eaglercraftXOpts.showBootMenuOnLaunch = true;
-		});
 	});
 })();
 </script>
@@ -101,7 +97,7 @@ ${classes_js}
 <h1>This file is from <span style="color:#AA0000;">${date}</span></h1>
 <h2>Game will launch in <span id="launchCountdownNumber">5</span>...</h2>
 <div style="border:2px solid black;width:100%;height:15px;padding:1px;margin-bottom:20vh;"><div id="launchCountdownProgress" style="background-color:#555555;width:0%;height:100%;"></div>
-<p style="margin-top:30px;"><button id="skipCountdown" autofocus>Skip Countdown</button>&emsp;<button id="bootMenu">Enter Boot Menu</button></p></div>
+<p style="margin-top:30px;"><button id="skipCountdown" autofocus>Skip Countdown</button></p></div>
 </div>
 </div>
 </body>
